@@ -1,29 +1,36 @@
 # CSS Battle: #1 - Pilot Battle
 
-## #6 - Missing Slice
+## #6 - Leafy Trail
 
-<img src="images/missingslice.png" width="300" />
+<img src="images/leafytrail.png" width="300" />
 
 ```
-<div></div>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
 
 <style>
   body {
-	background: #E3516E;
-    position: relative;
-    margin: 0;
+    background: #0B2429;
   }
   div {
-    border: 100px dashed;
-    top: 16.5%;
-    left: 25%;
+    width: 150px;
+    height: 150px;
+    background: #1A4341;
+    border-radius: 100px 0px;
     position: absolute;
-    border-radius: 50%;
-    border-left-color: #51B5A9;
-    border-top-color: #FADE8B;
-    border-right-color: #E3516E;
-    border-bottom-color: #F7F3D7;
-    transform: rotate(45deg);
+    top: 25%;
+    left: 19%;
+  }
+  .two {
+    background: #998235;
+    transform: translate(32.5%);
+    z-index: 2;
+  }
+  .three {
+    background: #F3AC3C;
+    transform: translate(65.5%);
+    z-index: 2;
   }
 </style>
 ```
